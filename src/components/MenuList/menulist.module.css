@@ -1,0 +1,94 @@
+.categoryHeader {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 24px;
+    padding: 16px;
+}
+
+.categoryTitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+.categoryListItem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    transition: background .5s;
+}
+
+.categoryListItem:hover {
+    cursor: pointer;
+    background: #F8F9FA;
+}
+
+.itemName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #121212;
+}
+
+.itemPrice {
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.menuListItemLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.menuListItemHeader {
+    display: flex;
+}
+
+.itemDescription {
+    width: 424px;
+    font-size: 16px;
+    color: #464646;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categoryListItemImage {
+    width: 128px;
+    height: 85px;
+    border-radius: 4px;
+}
+
+.counter {
+    height: 18px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 6px;
+    padding: 1px 4px;
+    border-radius: 4px;
+    background-color: var(--primary-colour);
+    color: white;
+}
+
+.categoryTitleArrow {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 1024px) {
+    .menuListItemLeft, .itemDescription {
+        width: 64%;
+    }
+
+    .itemDescription {
+        width: 100%;
+    }
+}

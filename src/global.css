@@ -1,0 +1,31 @@
+:root {
+  --background-colour: #ffffff;
+  --primary-colour: #4f372f;
+  --primary-colour-hover: #4f372f;
+  --nav-background-colour: #4f372f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-colour);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--primary-colour);
+}
+
+button:hover {
+  background-color: var(--primary-colour-hover);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,90 @@
+.main_content {
+    width: 600px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 14px;
+}
+
+.categoryOptions {
+    display: flex;
+    width: 100%;
+    height: 190px;
+    padding: 16px;
+    gap: 24px;
+}
+
+.categoryOption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 146px;
+}
+
+.categoryOptionImageContainer {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.categoryOptionImageContainer.active {
+    border: 2px solid var(--primary-colour);
+}
+
+.categoryOptionImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+
+.categoryOptionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 62px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #121212;
+}
+
+.categoryOptionTitle.active {
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-colour);
+}
+
+.menuFooter {
+    display: none;
+}
+
+.noResults {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+@media (max-width: 1024px) { 
+    .main_content {
+        width: 100%;
+    }
+
+    .menuFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EEEEEE;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .allergyInfo {
+        color: var(--primary-colour);
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
